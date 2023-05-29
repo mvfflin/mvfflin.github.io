@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- stylings -->
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/navbar.css" />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Slackside+One&family=Tsukimi+Rounded:wght@600&family=Ubuntu:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <!-- title, desc, etc. -->
+        <title>mvfflin's profile</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbrand">
+                <img src="./images/arnolamp.gif" class="w-200" />
+                <h1>Mvfflin</h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Projects</li></a>
+                    <a href="#"><li>Card</li></a>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="home">
+            <h1 class="title">Hi everyone, I am</h1>
+
+            <h1
+                class="name"
+                onclick="window.location.href = `https://github.com/mvfflin`"
+            >
+                Mvfflin
+            </h1>
+            <h2 class="title">
+                Web Developer | Beginner Programmer | Content Creator
+            </h2>
+            <a class="btn" href="#about">About Me</a>
+            <a class="btn" href="#projects">My Projects</a>
+        </section>
+
+        <script>
+            const nav = document.querySelector(".navbar");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY == 0) {
+                    nav.style.backgroundColor = "transparent";
+                } else {
+                    nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+                }
+            });
+
+            window.addEventListener("load", () => {
+                if (window.scrollY == 0) {
+                    nav.style.backgroundColor = "transparent";
+                } else {
+                    nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+                }
+            });
+        </script>
+    </body>
+</html>

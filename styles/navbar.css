@@ -1,0 +1,63 @@
+.navbar {
+    width: 100%;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    backdrop-filter: blur(10px);
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbrand {
+    font-family: "Slackside One", sans-serif;
+    position: absolute;
+    margin: 15px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.navbrand img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbrand h1 {
+    margin-left: 40px;
+    color: white;
+    float: left;
+    font-size: 30px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 23px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    font-family: "Tsukimi Rounded";
+    transition: all 0.2s ease-in-out;
+}
+
+.menu ul li:hover,
+.menu ul li:active,
+.menu ul li:focus {
+    scale: 1.2;
+    rotate: 6deg;
+    box-shadow: 0 6px 10px 0 rgba(0, 208, 255, 0.23);
+}
