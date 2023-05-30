@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 #home {
@@ -73,10 +74,51 @@ body {
     text-decoration: none;
     color: black;
     transition: all 0.2s ease-in-out;
+    animation: slide-down 1.5s forwards ease-in-out;
 }
 
-#home .btn:hover {
+#home .btn:hover,
+#home .btn:active {
     scale: 1.2;
+}
+
+/* about section */
+#about {
+    margin-top: 500px;
+    padding: 50px;
+    padding-top: 100px !important;
+    background-color: rgba(255, 255, 255, 0.166);
+    backdrop-filter: blur(20px);
+}
+
+#about .title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    color: white;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+}
+
+#about .aboutme {
+    font-family: "Tsukimi Rounded", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    font-size: 20px;
+}
+
+#about .aboutme a {
+    text-decoration: none;
+    padding: 2.5px;
+    padding-left: 5px;
+    cursor: pointer;
+    padding-right: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
 }
 
 /* animations */
