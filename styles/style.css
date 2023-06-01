@@ -16,6 +16,15 @@ a {
     text-decoration: none;
 }
 
+footer {
+    background-color: rgb(37, 37, 37);
+    bottom: 0;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+}
+
 #home {
     margin-top: 250px;
     margin-right: 20px;
