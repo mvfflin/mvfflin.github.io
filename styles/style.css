@@ -188,6 +188,33 @@ a {
     text-align: center;
 }
 
+#projects .project-grid li .pfeat {
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 5px;
+    font-family: "Aoboshi One", sans-serif;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.pfeat:hover,
+.pfeat:active,
+.pfeat:focus {
+    scale: 1.2;
+}
+
+#projects .project-grid li .pnobtn {
+    color: white;
+    margin-top: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+}
+
 #projects .project-grid li .project-info {
     text-align: center;
 }
