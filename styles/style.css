@@ -132,6 +132,12 @@ a {
     color: black;
     border-radius: 5px;
     font-family: "Ubuntu", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+#about .aboutme a:hover {
+    font-size: 22px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
 }
 
 #projects {
@@ -217,6 +223,54 @@ a {
 
 #projects .project-grid li .project-info {
     text-align: center;
+}
+
+/* contact section */
+#contact {
+    margin-top: 250px;
+}
+
+#contact .title {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: "Slackside One", sans-serif;
+    font-size: 50px;
+}
+
+#contact div {
+    margin: 30px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+#contact div a img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+#contact div a img:hover,
+#contact div a img:active,
+#contact div a img:focus {
+    width: 115px;
+    height: 115px;
+    box-shadow: 0 3px 5px rgb(183, 183, 183);
+}
+
+#contact .discordwidget {
+    margin-top: 30px !important;
+    margin: 50px auto;
+}
+
+#contact .info {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
 }
 
 /* buttons */
