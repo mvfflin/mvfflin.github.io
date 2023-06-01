@@ -12,6 +12,10 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 #home {
     margin-top: 250px;
     margin-right: 20px;
@@ -34,6 +38,15 @@ body {
     color: white;
     text-align: center;
     animation: slide-down 1.5s forwards ease;
+    margin-top: 20px;
+}
+#home h3.title {
+    width: auto;
+    margin: 0 auto;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    text-align: center;
+    animation: slide-down 1.8s forwards ease;
     margin-top: 20px;
 }
 
@@ -86,7 +99,7 @@ body {
 #about {
     margin-top: 500px;
     padding: 50px;
-    padding-top: 100px !important;
+    padding-top: 70px !important;
     background-color: rgba(255, 255, 255, 0.166);
     backdrop-filter: blur(20px);
 }
@@ -121,6 +134,110 @@ body {
     font-family: "Ubuntu", sans-serif;
 }
 
+#projects {
+    margin-top: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 150px;
+}
+
+#projects .title {
+    text-align: center;
+    font-family: "Aoboshi One", sans-serif;
+    color: white;
+}
+
+#projects .desc {
+    margin-top: 5px;
+    text-align: center;
+    font-family: "Tsukimi Rounded", sans-serif;
+    color: white;
+}
+
+#projects .project-grid {
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+#projects .project-grid li {
+    background-color: rgba(0, 0, 0, 0.306);
+    display: inline-block;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(12px);
+}
+
+#projects .project-grid li img {
+    width: 500px;
+    height: 250px;
+}
+#projects .project-grid li .ptitle {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: "Tsukimi Rounded", sans-serif;
+}
+
+#projects .project-grid li .pdesc {
+    color: gray;
+    font-family: "Aoboshi One", sans-serif;
+    text-align: center;
+}
+
+#projects .project-grid li .project-info {
+    text-align: center;
+}
+
+/* buttons */
+.github {
+    cursor: pointer;
+    background-color: #2c2c2c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: "Aoboshi One", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.preview {
+    cursor: pointer;
+    background-color: #0040ff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: "Aoboshi One", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.github:hover,
+.preview:hover,
+.github:active,
+.preview:active,
+.github:focus,
+.preview:focus {
+    scale: 1.2;
+}
+
 /* animations */
 @keyframes slide-down {
     from {
@@ -141,5 +258,21 @@ body {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+/* responsives */
+@media (max-width: 768px) {
+    #projects .project-grid li img {
+        width: 250px;
+        height: 125px;
+    }
+
+    #projects .project-grid li .ptitle {
+        font-size: 20px;
+    }
+
+    #projects .project-grid li .pdesc {
+        font-size: 15px;
     }
 }
