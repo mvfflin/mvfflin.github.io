@@ -44,15 +44,28 @@
                 <h1>Mvfflin</h1>
             </div>
 
-            <div class="menu">
-                <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#about"><li>About</li></a>
-                    <a href="#projects"><li>Projects</li></a>
-                    <a href="/card.html"><li>Card</li></a>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <label for="check" class="checkbtn" onclick="enableNavPhone()">
+                <i class="fa-solid fa-list"></i
+            ></label>
+            <input type="checkbox" id="check" aria-label="check" />
         </nav>
+
+        <!-- phone nav -->
+        <div class="navphone">
+            <ul>
+                <li onclick="whenChoose()"><a href="#">Home</a></li>
+                <li onclick="whenChoose()"><a href="#about">About</a></li>
+                <li onclick="whenChoose()"><a href="#projects">Projects</a></li>
+                <li onclick="whenChoose()"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
 
         <section id="home">
             <h1 class="title">Hi everyone, I am</h1>
@@ -211,11 +224,23 @@
             <h5>Copyright mvfflin</h5>
         </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="./scripts/firefly.js"></script>
-        <script src="./scripts/fireflyEnable.js"></script>
         <script>
             const nav = document.querySelector(".navbar");
+            const checkbox = document.getElementById("check");
+            const navphone = document.querySelector(".navphone");
+
+            function enableNavPhone() {
+                if (checkbox.checked == true) {
+                    navphone.style.left = "100%";
+                } else {
+                    navphone.style.left = 0;
+                }
+            }
+
+            function whenChoose() {
+                navphone.style.left = "100%";
+                checkbox.checked = false;
+            }
 
             window.addEventListener("scroll", () => {
                 if (window.scrollY == 0) {
@@ -230,6 +255,11 @@
                     nav.style.backgroundColor = "transparent";
                 } else {
                     nav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+                }
+                if (checkbox.checked == false) {
+                    navphone.style.left = "100%";
+                } else {
+                    navphone.style.left = "0";
                 }
             });
         </script>

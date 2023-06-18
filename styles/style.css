@@ -9,7 +9,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -189,6 +191,7 @@ footer {
 #projects .project-grid li img {
     width: 500px;
     height: 250px;
+    margin: 0 auto;
 }
 #projects .project-grid li .ptitle {
     color: white;
@@ -273,7 +276,7 @@ footer {
 
 #contact .discordwidget {
     margin-top: 30px !important;
-    margin: 50px auto;
+    margin: 50px 20px;
 }
 
 #contact .info {
@@ -353,10 +356,15 @@ footer {
 }
 
 /* responsives */
-@media (max-width: 768px) {
+@media (max-width: 858px) {
+    #projects .project-grid li {
+        width: 300px;
+        height: auto;
+    }
+
     #projects .project-grid li img {
-        width: 250px;
-        height: 125px;
+        width: 300px;
+        height: 150px;
     }
 
     #projects .project-grid li .ptitle {

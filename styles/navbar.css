@@ -14,14 +14,15 @@
     margin: 15px;
     margin-left: 50px;
     width: 300px;
+    float: left;
 }
 
 .navbrand img {
-    float: left;
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
+    float: left;
 }
 
 .navbrand h1 {
@@ -31,16 +32,13 @@
     font-size: 30px;
 }
 
-.menu {
+.navbar ul {
     float: right;
-}
-
-.menu ul {
     list-style: none;
     margin: 23px;
 }
 
-.menu ul li {
+.navbar ul li {
     display: inline-block;
     margin-right: 40px;
     padding: 5px;
@@ -54,10 +52,87 @@
     transition: all 0.2s ease-in-out;
 }
 
-.menu ul li:hover,
-.menu ul li:active,
-.menu ul li:focus {
+.navbar ul li a {
+    color: black;
+}
+
+.navbar ul li:hover,
+.navbar ul li:active,
+.navbar ul li:focus {
     scale: 1.2;
     rotate: 6deg;
     box-shadow: 0 6px 10px 0 rgba(0, 208, 255, 0.23);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    cursor: pointer;
+    display: none;
+    font-family: "Ubuntu", sans-serif;
+    margin-right: 20px;
+    margin-top: 18px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#check {
+    display: none;
+}
+
+.navphone {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.639);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    left: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.navphone ul {
+    display: block;
+    margin-top: 300px;
+}
+
+.navphone ul li {
+    list-style: none;
+    margin: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navphone ul li a {
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    font-family: "Tsukimi Rounded";
+    transition: all 0.2s ease-in-out;
+}
+
+.navphone ul li:hover,
+.navphone ul li:active,
+.navphone ul li:focus {
+    scale: 1.2;
+    rotate: 6deg;
+}
+
+/* responsives */
+@media (max-width: 858px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
 }
